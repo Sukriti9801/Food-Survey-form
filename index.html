@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Food survey form</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <div class="container">
+      <header class="text-center">
+    <h1 id="title">Easy Eats India Survey Form</h1>
+    <p id="description" class="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+      </header>
+    <form action="https://formspree.io/f/mjvjogye" method="POST" id="survey-form" class="form-label">
+      <div class="form-group">
+        <label for="name" id="name-label"> Name </label>
+        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"required>
+
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label"> Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="abcd@gmail.com" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label"> Age </label>
+          <input type="number" name="age" id="number" class="form-control" min="10" max="99">
+      </div>
+          <div class="form-group">
+            <label for="dropdown"> How would you rate the value of our food? </label>
+            <select name="dropdown" id="dropdown" class="form-control" required>
+              <option disabled selected value>Rate our food </option>
+              <option value="notgood"> Not good </option>
+              <option value="satisfied"> Satisfied </option>
+              <option value="fair"> Fair </option>
+              <option value="good"> Good </option>
+              <option value="verygood"> Very Good </option>
+             <option value="outstanding"> Outstanding</option>
+            </select>
+          </div>
+          <div class="form-group">
+             <p> Would you like to recommend this resturant to a friend ?</p>
+
+          <label> <input name="user-recommend" value="ofcourse" type="radio" class="input-radio">Ofcourse</label>
+
+           <label> <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+
+          <label>
+             <input name="user-recommend" value="notsure" type="radio" class="input-radio">
+             Not sure
+           </label>
+          </div>
+        <div class="form-group">
+          <label for="favorite">How likely is it that you would come back?</label>
+          <select name="likely" id="likely" class="form-control" required>
+            <option disabled selected value>Select  </option>
+              <option value="verylikely"> Very likely </option>
+              <option value="likely"> Likely</option>
+              <option value="unlikely"> Unlikely </option>
+              <option value="veryunlikely"> Very unlikely</option>
+
+            </select>
+          </div>
+          <div class="form-group">
+            <p>What would you like to see improved ? </p>
+           <p> <label><input type="checkbox" value="pace" name="answer"class="input-checkbox">Pace of food delivery</label></p>
+            <p> <label><input type="checkbox" value="taste" name="answer"class="input-checkbox">Taste of food</label></p>
+            <p> <label><input type="checkbox" value="quality" name="answer"class="input-checkbox">Quality of drinks</label></p>
+            <p> <label><input  type="checkbox"value="menu"class="input-checkbox"> Menu of food-items</label></p>
+           <p> <label><input type="checkbox" value="service" name="answer"class="input-checkbox">Service of the server</label></p>
+            <p> <label><input type="checkbox" value="washroom" name="answer"class="input-checkbox">Washroom</label></P>
+           <p> <label><input type="checkbox" value="comfort" name="answer"class="input-checkbox">Seats and dining table </label></p>
+          </div>
+        <div class="form-group">
+          <p>Any comments or suggestion?</p>
+          <textarea name="comments" id="comments" cols="50" rows="6" class="input-textarea"placeholder="Enter your comments here...." required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" name="submit" id="submit" class="submit">Submit</button>
+        </div>
+
+            </form>
+      </div>
+  </body>
+</html>
